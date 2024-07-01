@@ -1,0 +1,111 @@
+@import '../../app.scss';
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+
+    @include mobile {
+        // padding: 0;
+        margin: 30px;
+    }
+
+    .container {
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5%;
+
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .about-cal-1 {
+                flex-basis: 35%;
+                text-align: center;
+
+                img {
+                    width: 100%;
+                    border-radius: 15px;
+
+                    @include mobile {
+                        width: 0%;
+                    }
+                }
+            }
+
+            .about-cal-2 {
+                flex-basis: 55%;
+
+                .sub-title {
+                    font-size: 60px;
+                    font-weight: 600;
+                    color: #fff;
+
+                    @include mobile {
+                        font-size: 40px;
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    @include mobile {
+                        font-size: 14px;
+                    }
+                }
+
+                .tab-titles {
+                    display: flex;
+                    margin: 20px 0 40px;
+                    position: relative;
+
+                    .tab-links {
+                        margin-right: 50px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        margin-bottom: -50px;
+                    }
+
+                    // .tab-links::after {
+                    //     content: '';
+                    //     width: 0;
+                    //     height: 3px;
+                    //     background: #ff004f;
+                    //     position: absolute;
+                    //     left: 0;
+                    //     bottom: -8px;
+                    //     transition: 0.5s;
+                    // }
+
+                    // .tab-links.active-link::after {
+                    //     width: 3%;
+                    // }
+                }
+
+                .tab-contents ul li {
+                    list-style: none;
+                    margin: 10px 0;
+
+                    span {
+                        color: #ff004f;
+                        padding-bottom: 30px;
+                    }
+
+                }
+
+                // .tab-contents {
+                //     display: none;
+                // }
+
+                // .tab-contents.active-tab {
+                //     display: block;
+                // }
+            }
+        }
+    }
+
+
+}

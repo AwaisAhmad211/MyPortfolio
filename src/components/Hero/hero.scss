@@ -1,0 +1,42 @@
+@import "../../app.scss";
+
+
+.navbar{
+        // background-color: red;
+    height: 90px;
+    margin: 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile{
+        justify-content: flex-end;
+    }
+    .logo{
+        display: flex;
+        gap: 0;
+        @include mobile{
+            display: none;
+        }
+        span{
+            font-size: 35px;
+            color: orange;
+            font-weight: 600;
+        }
+        h1{
+            font-size: 35px;
+            font-weight: 400;
+        }
+    }
+    .socials{
+        a{
+            img{
+                width: 25px;
+                height: 25px;
+                margin: 5px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
