@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './app.scss'
 import Hero from './components/Hero/Hero.jsx'
 import Intro from './components/intro/intro.jsx'
@@ -11,7 +10,6 @@ import Contact from './components/contact/Contact.jsx'
 import { Cursor } from './components/cursor/Cursor.jsx'
 import About from './components/about/about.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <div>
     <Cursor />
    <section id='Homepage'>
@@ -35,5 +33,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Contact />
    </section>
     </div>
-  </React.StrictMode>
 )
