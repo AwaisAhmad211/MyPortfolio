@@ -8,7 +8,7 @@ import Services from './components/services/Services.jsx'
 import Portfolio from './components/portfolio/Portfolio.jsx'
 import Contact from './components/contact/Contact.jsx'
 import { Cursor } from './components/cursor/Cursor.jsx'
-import About from './components/about/about.jsx'
+import About from './components/about/About.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
     <div>
     <Cursor />
