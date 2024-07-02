@@ -1,14 +1,25 @@
 import React, { useState } from 'react'
+import { animate, motion } from 'framer-motion';
 import './about.scss'
 
 
 
 const About = () => {
     let [skill, setSkill] = useState(true);
-    let [education , setEducation] = useState(false)
+    let [education, setEducation] = useState(false)
+    const varients = {
+        initial : {
+            y: 0,
+            opacity : 0.5,
+        },
+        animate: {
+            y: 1,
+            opacity : 1,
+        }
+    }
     return (
       <>
-      <div id='about'>
+      <motion.div id='about' variants={varients} initial="initial" animate="animate">
           <div className="container">
               <div className="row">
                   <div className="about-cal-1">
@@ -18,8 +29,8 @@ const About = () => {
                       <h1 className='sub-title'>About Me</h1>
                       <p>"Meet Awais Ahmad, a 19-year-old MERN stack mastermind with a passion for crafting exceptional digital experiences. With a year of experience and a portfolio that speaks for itself, Awais has established himself as a rising talent in the world of software development. His unique blend of technical expertise, creativity, and attention to detail makes him a force to be reckoned with. Take a closer look at his work and discover the future of innovation!"</p>
                       <div className="tab-titles">
-                                <p className='tab-links active-link' onClick={() => { setSkill((prev) => !prev); setEducation((prev)=> false) }}>Skills</p>
-                                <p className='tab-links active-link' onClick={() => { setEducation((prev) => !prev); setSkill((prev) => false) }} >Education</p>
+                                <motion.p className='tab-links active-link' onClick={() => { setSkill((prev) => !prev); setEducation((prev)=> false) }} whileHover={{scale:1.05,color:"orange"} }>Skills</motion.p>
+                                <motion.p className='tab-links active-link' onClick={() => { setEducation((prev) => !prev); setSkill((prev) => false) }} whileHover={{ scale: 1.05, color: "orange" }}>Education</motion.p>
                             </div>
                             {skill == true ? <div className="tab-contents active-tab" id='skills'>
                           <ul>
@@ -32,6 +43,10 @@ const About = () => {
                               <li>➡&nbsp; Node js</li>
                               <li>➡&nbsp; SASS</li>
                               <li>➡&nbsp; Tailwind CSS</li>
+                              <li>➡&nbsp; JWT</li>
+                              <li>➡&nbsp; Framer Motion</li>
+                                    
+                                    
                           </ul>
                             </div> : ""}
                             {education == false ? "" : <div className="tab-contents" id='education'>
@@ -44,7 +59,7 @@ const About = () => {
                   </div>
               </div>
           </div>
-            </div>
+            </motion.div>
      </>
   )
 }
