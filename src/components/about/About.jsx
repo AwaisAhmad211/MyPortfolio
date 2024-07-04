@@ -7,25 +7,15 @@ import './about.scss'
 const About = () => {
     let [skill, setSkill] = useState(true);
     let [education, setEducation] = useState(false)
-    const varients = {
-        initial : {
-            y: 0,
-            opacity : 0.5,
-        },
-        animate: {
-            y: 1,
-            opacity : 1,
-        }
-    }
     return (
       <>
-      <motion.div id='about' variants={varients} initial="initial" animate="animate">
-          <div className="container">
+      <div id='about'>
+          <div className="container" >
               <div className="row">
                   <div className="about-cal-1">
                       <img src="/about.jpg"/>
                   </div>
-                  <div className="about-cal-2">
+                  <motion.div className="about-cal-2" initial={{opacity : 0, y : 500}} whileInView={{opacity:1,y : 0,transition:{duration:1}}} >
                       <h1 className='sub-title'>About Me</h1>
                       <p>"Meet Awais Ahmad, a 19-year-old MERN stack mastermind with a passion for crafting exceptional digital experiences. With a year of experience and a portfolio that speaks for itself, Awais has established himself as a rising talent in the world of software development. His unique blend of technical expertise, creativity, and attention to detail makes him a force to be reckoned with. Take a closer look at his work and discover the future of innovation!"</p>
                       <div className="tab-titles">
@@ -56,10 +46,10 @@ const About = () => {
                                     <li><span>2024(Present)</span><br></br>➡&nbsp;Doing BSSE(Bachelor of Science in Software Engineering from Virtual University)</li>
                           </ul>
                       </div>}
-                  </div>
+                  </motion.div>
               </div>
           </div>
-            </motion.div>
+            </div>
      </>
   )
 }

@@ -36,10 +36,10 @@ const Contact = () => {
             </motion.div>
         </motion.div>
         <div className="formContainer">
-            <form >
-                <input type="text" placeholder='Name' required />
-                <input type="email" placeholder='Email' required />
-                <textarea type="text" placeholder='Your Message' />
+            <form id='form'>
+                <input type="text" placeholder='Name' required name='Name' autoComplete='xyz'/>
+                <input type="email" placeholder='Email' required name='Email' autoComplete='xyz@gmail.com'/>
+                <textarea type="text" placeholder='Your Message' name='Textarea' />
                 <button>Submit</button>
 
             </form>

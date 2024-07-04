@@ -40,7 +40,7 @@ const Intro = () => {
             <motion.h2>Awais Ahmad</motion.h2>
             <motion.h1>MERN stack developer and UI designer</motion.h1>
             <motion.div className="buttons">
-                <a>See latest works</a>
+                <a href='https://github.com/AwaisAhmad211'>See latest works</a>
                 <a href='#Contact'>Contact Me</a>
             </motion.div>
             <motion.img src="/scroll.png" variants={ImgVariants} initial="initial" animate="animate"/>

@@ -5,16 +5,16 @@ import {motion , useScroll , useSpring, useTransform} from 'framer-motion'
 const items = [
     {
         id:1,
-        tittle: "GYM App",
-        img : "/gym.png",
-        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam velit, id blanditiis doloribus mollitia est culpa iusto unde! Deleniti!",
-        src: "https://awaisahmad211.github.io/"
+        tittle: "Chess Game",
+        img : "/Chess.jpg",
+        des: "Chess Game Clone, a project that taught me valuable skills and fueled my passion for development.",
+        src: "https://github.com/AwaisAhmad211/Chess-Game"
     },
     {
         id:2,
-        tittle: "Landing Page",
-        img : "/landing.png",
-        des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam velit, id blanditiis doloribus mollitia est culpa iusto unde! Deleniti!"
+        tittle: "E-commerce",
+        img : "/ecommerce.jpg",
+        des : "Developed a fast and secure ecommerce website using Express JS and Node JS, deployed on Vercel. The website features a responsive design, robust payment gateway integration."
     },
     {
         id:3,
@@ -24,15 +24,9 @@ const items = [
     },
     {
         id:4,
-        tittle: "Food Web",
-        img : "/food.png",
-        des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam velit, id blanditiis doloribus mollitia est culpa iusto unde! Deleniti!"
-    },
-    {
-        id:5,
-        tittle: "Blogging App",
+        tittle: "40+ More",
         img : "/blog.png",
-        des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam velit, id blanditiis doloribus mollitia est culpa iusto unde! Deleniti!"
+        des : "Explore my collection of mini projects, showcasing my versatility and skill in tackling diverse challenges, from building a Chess Game Clone to crafting a To-Do List App and Weather Dashboard."
     },
 ]
 
