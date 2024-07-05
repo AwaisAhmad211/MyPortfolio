@@ -11,22 +11,25 @@ const items = [
         src: "https://github.com/AwaisAhmad211/Chess-Game"
     },
     {
+        id:3,
+        tittle: "Apple Vision",
+        img : "/Vision.png",
+        des : "Vision Clone, a challenging and rewarding project that honed my development expertise and fueled my enthusiasm for creating cutting-edge wearables, inspired by Apple Vision's pioneering spirit.",
+        src : "https://apple-vision-clonw.vercel.app/"
+    },
+    {
         id:2,
         tittle: "E-commerce",
         img : "/ecommerce.jpg",
-        des : "Developed a fast and secure ecommerce website using Express JS and Node JS, deployed on Vercel. The website features a responsive design, robust payment gateway integration."
-    },
-    {
-        id:3,
-        tittle: "Business Web",
-        img : "/business.png",
-        des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam velit, id blanditiis doloribus mollitia est culpa iusto unde! Deleniti!"
+        des : "Developed a fast and secure ecommerce website using Express JS and Node JS, deployed on Vercel. The website features a responsive design, robust payment gateway integration.",
+        src : "https://awaisahmad211.github.io/Coming-Soon-Page/",
     },
     {
         id:4,
         tittle: "40+ More",
-        img : "/blog.png",
-        des : "Explore my collection of mini projects, showcasing my versatility and skill in tackling diverse challenges, from building a Chess Game Clone to crafting a To-Do List App and Weather Dashboard."
+        img : "/projectList.png",
+        des : "Explore my collection of mini projects, showcasing my versatility and skill in tackling diverse challenges, from building a Chess Game Clone to crafting a To-Do List App and Weather Dashboard.",
+        src : "https://project-list-seven.vercel.app/"
     },
 ]
 
