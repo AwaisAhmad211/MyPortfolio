@@ -5,13 +5,6 @@ import {motion , useScroll , useSpring, useTransform} from 'framer-motion'
 const items = [
     {
         id:1,
-        tittle: "Chess Game",
-        img : "/Chess.jpg",
-        des: "Chess Game Clone, a project that taught me valuable skills and fueled my passion for development.",
-        src: "https://github.com/AwaisAhmad211/Chess-Game"
-    },
-    {
-        id:3,
         tittle: "Apple Vision",
         img : "/Vision.png",
         des : "Vision Clone, a challenging and rewarding project that honed my development expertise and fueled my enthusiasm for creating cutting-edge wearables, inspired by Apple Vision's pioneering spirit.",
@@ -19,6 +12,13 @@ const items = [
     },
     {
         id:2,
+        tittle: "Chess Game",
+        img : "/Chess.jpg",
+        des: "Chess Game Clone, a project that taught me valuable skills and fueled my passion for development.",
+        src: "https://github.com/AwaisAhmad211/Chess-Game"
+    },
+    {
+        id:3,
         tittle: "E-commerce",
         img : "/ecommerce.jpg",
         des : "Developed a fast and secure ecommerce website using Express JS and Node JS, deployed on Vercel. The website features a responsive design, robust payment gateway integration.",
