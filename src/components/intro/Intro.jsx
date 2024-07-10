@@ -38,7 +38,7 @@ const Intro = () => {
       <div className="wrapper">
         <motion.div className="textContainer"  variants={textVariants} initial="initial" animate="animate">
             <motion.h2>Awais Ahmad</motion.h2>
-            <motion.h1>MERN stack developer and UI designer</motion.h1>
+            <motion.h1>React Developer</motion.h1>
             <motion.div className="buttons">
                 <a href='https://github.com/AwaisAhmad211'>See latest works</a>
                 <a href='#Contact'>Contact Me</a>
