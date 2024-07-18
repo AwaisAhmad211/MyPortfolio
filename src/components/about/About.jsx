@@ -17,7 +17,7 @@ const About = () => {
                   </div>
                   <motion.div className="about-cal-2" initial={{opacity : 0, y : 500}} whileInView={{opacity:1,y : 0,transition:{duration:1}}} >
                       <h1 className='sub-title'>About Me</h1>
-                      <p>"Meet Awais Ahmad, a 19-year-old React mastermind with a passion for crafting exceptional digital experiences. With a year of experience and a portfolio that speaks for itself, Awais has established himself as a rising talent in the world of software development. His unique blend of technical expertise, creativity, and attention to detail makes him a force to be reckoned with. Take a closer look at his work and discover the future of innovation!"</p>
+                      <p>Meet Awais Ahmad, a 19-year-old React mastermind with a passion for crafting exceptional digital experiences. With a year of experience and a portfolio that speaks for itself, Awais has established himself as a rising talent in the world of software development. His unique blend of technical expertise, creativity, and attention to detail makes him a force to be reckoned with. Take a closer look at his work and discover the future of innovation!"</p>
                       <div className="tab-titles">
                                 <motion.p className='tab-links active-link' onClick={() => { setSkill((prev) => !prev); setEducation((prev)=> false) }} whileHover={{scale:1.05,color:"orange"} }>Skills</motion.p>
                                 <motion.p className='tab-links active-link' onClick={() => { setEducation((prev) => !prev); setSkill((prev) => false) }} whileHover={{ scale: 1.05, color: "orange" }}>Education</motion.p>

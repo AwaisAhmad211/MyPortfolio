@@ -59,9 +59,9 @@ const Contact = () => {
         </motion.div>
         <div className="formContainer">
             <form ref={formRef} onSubmit={sendEmail} id='form'>
-                <input type="text" placeholder='Name' required name='Name' autoComplete='xyz'/>
-                <input type="email" placeholder='Email' required name='Email' autoComplete='xyz@gmail.com'/>
-                <textarea type="text" placeholder='Your Message' name='Textarea' />
+                <input type="text" placeholder='Name' required name='name' autoComplete='xyz'/>
+                <input type="email" placeholder='Email' required name='email' autoComplete='xyz@gmail.com'/>
+                <textarea type="text" placeholder='Your Message' name='message' />
                 <button type='submit'>Submit</button>
                 {error && "Error"}
                 {success && "Success"}
